@@ -58,7 +58,7 @@ A child class that inherits from `BaseAPI` and adds GitHub repository-specific m
 **1. Clone the repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/JaiKansal/Cloud-Resource-Provisioning-Engine-GitHub-API
 cd "Cloud Resource Provisioning Engine (GitHub API)"
 ```
 
@@ -126,4 +126,3 @@ pytest tests/ -v
 | `requests` | HTTP client for GitHub API calls |
 | `pytest` | Test runner and assertion framework |
 | `python-dotenv` | Loads credentials from the `.env` file |
-# Cloud-Resource-Provisioning-Engine-GitHub-API
