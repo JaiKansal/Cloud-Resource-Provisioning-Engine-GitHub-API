@@ -1,0 +1,20 @@
+2026-06-21 08:29:42,657 | INFO | GitHubRepoAPI | Attempting to create repository: test-repo-automation-3
+2026-06-21 08:29:44,365 | INFO | GitHubRepoAPI | Repository 'test-repo-automation-3' created successfully
+2026-06-21 08:29:44,366 | INFO | GitHubRepoAPI | Attempting to delete repository: JaiKansal/test-repo-automation-3
+2026-06-21 08:29:45,011 | INFO | GitHubRepoAPI | Repository 'JaiKansal/test-repo-automation-3' deleted successfully
+2026-06-21 08:29:45,571 | INFO | GitHubRepoAPI | Attempting to delete repository: JaiKansal/this-repo-100-percent-does-not-exist
+2026-06-21 08:29:45,975 | WARNING | GitHubRepoAPI | Repository 'JaiKansal/this-repo-100-percent-does-not-exist' not found — nothing to delete
+2026-06-21 12:10:05,579 | INFO | GitHubRepoAPI | Attempting to create repository: test-repo-automation-3
+2026-06-21 12:10:07,318 | INFO | GitHubRepoAPI | Repository 'test-repo-automation-3' created successfully
+2026-06-21 12:10:07,319 | INFO | GitHubRepoAPI | Attempting to delete repository: JaiKansal/test-repo-automation-3
+2026-06-21 12:10:07,934 | INFO | GitHubRepoAPI | Repository 'JaiKansal/test-repo-automation-3' deleted successfully
+2026-06-21 12:10:08,427 | INFO | GitHubRepoAPI | Attempting to create repository: test-repo-automation-3
+2026-06-21 12:10:10,133 | INFO | GitHubRepoAPI | Repository 'test-repo-automation-3' created successfully
+2026-06-21 12:10:10,134 | INFO | GitHubRepoAPI | Attempting to create repository: test-repo-automation-3
+2026-06-21 12:10:10,695 | WARNING | GitHubRepoAPI | Repository 'test-repo-automation-3' already exists
+2026-06-21 12:10:10,695 | INFO | GitHubRepoAPI | Attempting to delete repository: JaiKansal/test-repo-automation-3
+2026-06-21 12:10:11,342 | INFO | GitHubRepoAPI | Repository 'JaiKansal/test-repo-automation-3' deleted successfully
+2026-06-21 12:10:11,825 | INFO | GitHubRepoAPI | Attempting to delete repository: JaiKansal/this-repo-100-percent-does-not-exist
+2026-06-21 12:10:12,335 | WARNING | GitHubRepoAPI | Repository 'JaiKansal/this-repo-100-percent-does-not-exist' not found — nothing to delete
+2026-06-21 12:10:12,846 | ERROR | GitHubRepoAPI | Token validation failed: token is expired or invalid
+2026-06-21 12:10:12,848 | INFO | GitHubRepoAPI | Attempting to create repository: any-repo-name
