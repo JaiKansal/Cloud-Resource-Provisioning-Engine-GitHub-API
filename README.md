@@ -186,6 +186,9 @@ stages:
 test:
   stage: test
   image: python:3.9
+  variables:
+    GITHUB_TOKEN: $GITHUB_TOKEN
+    GITHUB_USERNAME: $GITHUB_USERNAME
   script:
     - pip install -r requirements.txt
     - pytest -m smoke
@@ -195,6 +198,24 @@ test:
       - report.html
       - logs/
 ```
+
+### Required CI/CD Variables
+
+The `.env` file is gitignored and will not exist in the CI runner. You must add the credentials as **GitLab CI/CD Variables** so the runner can inject them as environment variables at runtime.
+
+**Steps:**
+
+1. Go to your GitLab project → **Settings** → **CI/CD** → **Variables**
+2. Click **Add variable** and add the following:
+
+| Key | Value | Flags |
+|---|---|---|
+| `GITHUB_TOKEN` | Your GitHub Personal Access Token | Masked, Protected |
+| `GITHUB_USERNAME` | Your GitHub username | Protected |
+
+GitLab automatically injects these into the runner environment. `os.getenv("GITHUB_TOKEN")` in the test code will resolve them without any code changes.
+
+> **Important:** Without these variables set, every API call will return `401 Unauthorized` and all tests will fail.
 
 **Artifacts saved for 1 week after each pipeline run:**
 - `report.html` — the HTML test report

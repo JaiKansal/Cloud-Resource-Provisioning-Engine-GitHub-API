@@ -3,7 +3,9 @@ import pytest
 from dotenv import load_dotenv
 from api.github_repo_api import GitHubRepoAPI
 
-load_dotenv()
+current_dir = os.path.dirname(os.path.abspath(__file__))
+env_path = os.path.join(current_dir, "..", "config", ".env")
+load_dotenv(dotenv_path=env_path)
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USERNAME = os.getenv("GITHUB_USERNAME")

@@ -1,4 +1,4 @@
-# Credentials
+# Credentials — never commit this
 .env
 
 # Python cache
@@ -15,3 +15,7 @@ env/
 
 # macOS
 .DS_Store
+
+# Runtime outputs — saved as GitLab artifacts instead
+logs/
+report.html
